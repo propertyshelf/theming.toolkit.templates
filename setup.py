@@ -3,7 +3,7 @@ import os
 
 version = '1.0'
 
-setup(name='toolkit.templates',
+setup(name='theming.toolkit.templates',
       version=version,
       description="A product that allows to change a set of templates in the plone.app.theming configuration",
       long_description=open("README.txt").read() + "\n" +
@@ -19,8 +19,9 @@ setup(name='toolkit.templates',
       author_email='jens@propertyshelf.com',
       url='http://propertyshelf.com',
       license='GPL',
-      packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['toolkit'],
+      packages=find_packages('src', exclude=['ez_setup']),
+      namespace_packages=['theming', 'theming.toolkit'],
+      package_dir={'': 'src'},
       include_package_data=True,
       zip_safe=False,
       install_requires=[

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+      name="theming.toolkit.templates" 
+      interface="theming.toolkit.templates.browser.interfaces.IToolkitTemplates"
+      />
+</layers>

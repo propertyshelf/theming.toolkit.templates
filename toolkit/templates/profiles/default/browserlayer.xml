@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<layers>
-  <layer
-      name="toolkit.templates" 
-      interface="toolkit.templates.browser.interfaces.IToolkitTemplates"
-      />
-</layers>

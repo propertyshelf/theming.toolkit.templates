@@ -17,7 +17,7 @@
 # EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 ###############################################################################
-"""Test Setup of toolkit.templates"""
+"""Test Setup of theming.toolkit.templates"""
 
 # python imports
 import unittest2 as unittest
@@ -27,8 +27,8 @@ from Products.CMFCore.utils import getToolByName
 from plone.browserlayer import utils as layerutils
 
 # local imports
-from toolkit.templates.browser.interfaces import IToolkitTemplates
-from toolkit.templates.testing import (TOOLKIT_TEMPLATES_INTEGRATION_TESTING,
+from theming.toolkit.templates.browser.interfaces import IToolkitTemplates
+from theming.toolkit.templates.testing import (TOOLKIT_TEMPLATES_INTEGRATION_TESTING,
 )
 
 
@@ -44,7 +44,7 @@ class TestSetup(unittest.TestCase):
     def test_product_is_installed(self):
         """Test that the product is installed."""
         self.assertTrue(self.qi_tool.isProductInstalled(
-            'toolkit.templates'))
+            'theming.toolkit.templates'))
 
     def test_browserlayer(self):
         """Test that the browserlayer is registered."""
