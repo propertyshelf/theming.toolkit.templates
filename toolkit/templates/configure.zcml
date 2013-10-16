@@ -6,6 +6,8 @@
     i18n_domain="toolkit.templates">
 
   <includeDependencies package="." />
+  <include package=".browser" />
+
   <plone:static
       directory="layout_default"
       type="theme"/>
