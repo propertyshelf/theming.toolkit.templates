@@ -50,3 +50,7 @@ class TestSetup(unittest.TestCase):
         """Test that the browserlayer is registered."""
         self.assertIn(IToolkitTemplates, layerutils.registered_layers())
 
+    def test_dependency_diazotheme_bootstrap(self):
+        """Test if diazotheme.bootstrap is installed as dependency"""
+        self.assertTrue(self.qi_tool.isProductInstalled(
+            'diazotheme.bootstrap'))

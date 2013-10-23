@@ -31,6 +31,7 @@ setup(
     install_requires=[
         'setuptools',
         'plone.app.theming',
+        'diazotheme.bootstrap',
     ],
     extras_require={
         'test': [
